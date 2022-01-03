@@ -1,17 +1,38 @@
 import { Link } from "react-router-dom";
+import styled from "styled-components";
+
+const Nav = styled.nav`
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+`;
+
+const Ul = styled.ul`
+	list-style-type: none;
+`;
+
+const A = styled(Link)`
+	&:link,
+	&:visited,
+	&:hover,
+	&:active {
+		text-decoration: none;
+		color: black;
+	}
+`;
 
 const Menu = () => {
 	return (
-		<nav>
-			<ul>
+		<Nav>
+			<Ul>
 				<li>
-					<Link to="/">Horloge</Link>
+					<A to="/">Horloge</A>
 				</li>
 				<li>
-					<Link to="/settings">Paramêtres</Link>
+					<A to="/settings">Paramètres</A>
 				</li>
-			</ul>
-		</nav>
+			</Ul>
+		</Nav>
 	);
 };
 
