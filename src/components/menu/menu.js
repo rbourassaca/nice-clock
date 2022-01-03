@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import gear from "bootstrap-icons/icons/gear-fill.svg";
+import clock from "bootstrap-icons/icons/clock-fill.svg";
 
 const Nav = styled.nav`
 	display: flex;
@@ -26,10 +28,14 @@ const Menu = () => {
 		<Nav>
 			<Ul>
 				<li>
-					<A to="/">Horloge</A>
+					<A to="/">
+						<img src={gear} />
+					</A>
 				</li>
 				<li>
-					<A to="/settings">Paramètres</A>
+					<A to="/settings">
+						<img src={clock} />
+					</A>
 				</li>
 			</Ul>
 		</Nav>
