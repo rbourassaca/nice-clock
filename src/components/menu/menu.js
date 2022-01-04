@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import gear from "bootstrap-icons/icons/gear-fill.svg";
-import clock from "bootstrap-icons/icons/clock-fill.svg";
+import styles from "../../variables/styles";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 const Nav = styled.nav`
 	position: absolute;
@@ -28,12 +28,20 @@ const A = styled(Link)`
 	&:hover,
 	&:active {
 		text-decoration: none;
-		color: black;
+	}
+	&:link,
+	&:visited,
+	&:active {
+		opacity: 0.2;
+	}
+	&:hover {
+		opacity: 0.7;
 	}
 `;
 
-const Img = styled.img`
-	width: 3rem;
+const Icon = styled.i`
+	font-size: 3rem;
+	color: ${styles.colors.text};
 `;
 
 const Menu = () => {
@@ -42,12 +50,12 @@ const Menu = () => {
 			<Ul>
 				<Li>
 					<A to="/">
-						<Img src={clock} />
+						<Icon className="bi bi-clock-fill" />
 					</A>
 				</Li>
 				<Li>
 					<A to="/settings">
-						<Img src={gear} />
+						<Icon className="bi bi-gear-fill" />
 					</A>
 				</Li>
 			</Ul>

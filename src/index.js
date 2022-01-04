@@ -5,11 +5,14 @@ import Menu from "./components/menu/menu";
 import Clock from "./components/clock/clock";
 import Settings from "./components/settings/settings";
 import styled from "styled-components";
+import styles from "./variables/styles";
 
 const Main = styled.main`
 	@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 	background-color: #f3f3f3;
 	font-family: "Montserrat", sans-serif;
+	background-color: ${styles.colors.background};
+	color: ${styles.colors.text};
 `;
 
 const Content = styled.section`
