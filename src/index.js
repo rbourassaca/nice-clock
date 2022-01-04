@@ -7,14 +7,15 @@ import Settings from "./components/settings/settings";
 import styled from "styled-components";
 
 const Main = styled.main`
-	display: flex;
-	flex-direction: row-reverse;
-	height: 100vh;
-	width: 100vw;
+	background-color: #f3f3f3;
 `;
 
 const Content = styled.section`
-	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
 `;
 
 ReactDOM.render(
