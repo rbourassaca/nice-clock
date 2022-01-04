@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/nice-clock/static/css/main.788d93b7.css",
-    "main.js": "/nice-clock/static/js/main.262e0ef7.js",
-    "static/media/bootstrap-icons.woff?": "/nice-clock/static/media/bootstrap-icons.38c4d2499557ae0379fd.woff",
-    "static/media/bootstrap-icons.woff2?": "/nice-clock/static/media/bootstrap-icons.2b56e79ae5013246de29.woff2",
-    "index.html": "/nice-clock/index.html",
-    "main.788d93b7.css.map": "/nice-clock/static/css/main.788d93b7.css.map",
-    "main.262e0ef7.js.map": "/nice-clock/static/js/main.262e0ef7.js.map"
+    "main.css": "./static/css/main.ed977e68.css",
+    "main.js": "./static/js/main.624adcc0.js",
+    "static/media/bootstrap-icons.woff?": "./static/media/bootstrap-icons.38c4d2499557ae0379fd.woff",
+    "static/media/bootstrap-icons.woff2?": "./static/media/bootstrap-icons.2b56e79ae5013246de29.woff2",
+    "index.html": "./index.html",
+    "main.ed977e68.css.map": "./static/css/main.ed977e68.css.map",
+    "main.624adcc0.js.map": "./static/js/main.624adcc0.js.map"
   },
   "entrypoints": [
-    "static/css/main.788d93b7.css",
-    "static/js/main.262e0ef7.js"
+    "static/css/main.ed977e68.css",
+    "static/js/main.624adcc0.js"
   ]
 }
