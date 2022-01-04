@@ -4,13 +4,14 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Menu from "./components/menu/menu";
 import Clock from "./components/clock/clock";
 import Settings from "./components/settings/settings";
+import Footer from "./components/footer/footer";
 import styled from "styled-components";
 import styles from "./variables/styles";
+import Background from "./components/background/background";
 
 const Main = styled.main`
 	@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat:wght@300&display=swap");
 	font-family: "Montserrat", sans-serif;
-	background-color: ${styles.colors.background};
 	color: ${styles.colors.text};
 	a:link,
 	a:visited,
@@ -33,6 +34,7 @@ const App = () => {
 	return (
 		<BrowserRouter>
 			<Main>
+				<Background />
 				<Menu />
 				<Content>
 					<Routes>
@@ -40,6 +42,7 @@ const App = () => {
 						<Route path="/settings" element={<Settings />} />
 						<Route path="*" element={<p>Humm... Il n'y a rien ici...</p>} />
 					</Routes>
+					<Footer />
 				</Content>
 			</Main>
 		</BrowserRouter>

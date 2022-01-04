@@ -13,12 +13,12 @@ const Nav = styled.nav`
 
 const Ul = styled.ul`
 	list-style-type: none;
-	margin: 1rem;
+	margin: ${styles.spacing.windowBorder};
 `;
 
 const Li = styled.li`
 	&:not(:last-child) {
-		margin-bottom: 0.5rem;
+		margin-bottom: ${styles.spacing.betweenElements};
 	}
 `;
 
@@ -31,10 +31,11 @@ const A = styled(Link)`
 	&:hover {
 		opacity: 0.7;
 	}
+	transition: ${styles.transitions.normal};
 `;
 
 const Icon = styled.i`
-	font-size: 3rem;
+	font-size: 2.5rem;
 `;
 
 const Menu = () => {
