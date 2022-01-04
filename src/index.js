@@ -7,7 +7,9 @@ import Settings from "./components/settings/settings";
 import styled from "styled-components";
 
 const Main = styled.main`
+	@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 	background-color: #f3f3f3;
+	font-family: "Montserrat", sans-serif;
 `;
 
 const Content = styled.section`
