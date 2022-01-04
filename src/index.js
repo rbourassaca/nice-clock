@@ -8,8 +8,7 @@ import styled from "styled-components";
 import styles from "./variables/styles";
 
 const Main = styled.main`
-	@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
-	background-color: #f3f3f3;
+	@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat:wght@300&display=swap");
 	font-family: "Montserrat", sans-serif;
 	background-color: ${styles.colors.background};
 	color: ${styles.colors.text};

@@ -5,6 +5,7 @@ import Numbers from "./numbers/numbers";
 const P = styled.p`
 	display: flex;
 	font-size: 6rem;
+	font-family: "Fira Code", monospace;
 `;
 
 const Clock = () => {
