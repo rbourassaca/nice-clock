@@ -18,18 +18,21 @@ const Content = styled.section`
 	height: 100vh;
 `;
 
-ReactDOM.render(
-	<BrowserRouter>
-		<Main>
-			<Menu />
-			<Content>
-				<Routes>
-					<Route path="/" element={<Clock />} />
-					<Route path="/settings" element={<Settings />} />
-					<Route path="*" element={<p>Humm... Il n'y a rien ici...</p>} />
-				</Routes>
-			</Content>
-		</Main>
-	</BrowserRouter>,
-	document.getElementById("root")
-);
+const App = () => {
+	return (
+		<BrowserRouter>
+			<Main>
+				<Menu />
+				<Content>
+					<Routes>
+						<Route path="/" element={<Clock />} />
+						<Route path="/settings" element={<Settings />} />
+						<Route path="*" element={<p>Humm... Il n'y a rien ici...</p>} />
+					</Routes>
+				</Content>
+			</Main>
+		</BrowserRouter>
+	);
+};
+
+ReactDOM.render(<App />, document.getElementById("root"));
