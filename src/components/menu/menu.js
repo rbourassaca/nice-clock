@@ -29,12 +29,12 @@ const Menu = () => {
 			<Ul>
 				<li>
 					<A to="/">
-						<img src={gear} />
+						<img src={clock} />
 					</A>
 				</li>
 				<li>
 					<A to="/settings">
-						<img src={clock} />
+						<img src={gear} />
 					</A>
 				</li>
 			</Ul>
