@@ -12,6 +12,13 @@ const Main = styled.main`
 	font-family: "Montserrat", sans-serif;
 	background-color: ${styles.colors.background};
 	color: ${styles.colors.text};
+	a:link,
+	a:visited,
+	a:hover,
+	a:active {
+		color: ${styles.colors.text};
+		text-decoration: none;
+	}
 `;
 
 const Content = styled.section`

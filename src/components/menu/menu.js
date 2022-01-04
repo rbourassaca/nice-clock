@@ -25,12 +25,6 @@ const Li = styled.li`
 const A = styled(Link)`
 	&:link,
 	&:visited,
-	&:hover,
-	&:active {
-		text-decoration: none;
-	}
-	&:link,
-	&:visited,
 	&:active {
 		opacity: 0.2;
 	}
@@ -41,7 +35,6 @@ const A = styled(Link)`
 
 const Icon = styled.i`
 	font-size: 3rem;
-	color: ${styles.colors.text};
 `;
 
 const Menu = () => {
