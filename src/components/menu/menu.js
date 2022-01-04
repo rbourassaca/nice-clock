@@ -26,7 +26,7 @@ const A = styled(Link)`
 	&:link,
 	&:visited,
 	&:active {
-		opacity: 0.2;
+		opacity: 0;
 	}
 	&:hover {
 		opacity: 0.7;
