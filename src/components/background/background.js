@@ -14,13 +14,13 @@ const Bg = styled.div`
 `;
 
 const Background = () => {
-	const [vantaEffect, setVantaEffect] = useState(0);
-	const myref = useRef();
+	const [vantaEffect, setVantaEffect] = useState();
+	const animation = useRef();
 	useEffect(() => {
 		if (!vantaEffect) {
 			setVantaEffect(
 				fog({
-					el: myref.current,
+					el: animation.current,
 					THREE: three,
 					mouseControls: false,
 					touchControls: false,
@@ -40,7 +40,7 @@ const Background = () => {
 			if (vantaEffect) vantaEffect.destroy();
 		};
 	});
-	return <Bg ref={myref} />;
+	return <Bg ref={animation} />;
 };
 
 export default Background;
