@@ -1,9 +1,7 @@
 import PropTypes from "prop-types";
 
 const Numbers = ({ num, length = 2 }) => {
-	return (
-		<p>{num.toLocaleString(undefined, { minimumIntegerDigits: length })}</p>
-	);
+	return <>{num.toLocaleString(undefined, { minimumIntegerDigits: length })}</>;
 };
 
 export default Numbers;
