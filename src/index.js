@@ -32,7 +32,7 @@ const Content = styled.section`
 
 const App = () => {
 	return (
-		<BrowserRouter>
+		<BrowserRouter basename="/nice-clock/">
 			<Main>
 				<Background />
 				<Menu />
@@ -49,4 +49,9 @@ const App = () => {
 	);
 };
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(
+	<React.StrictMode>
+		<App />
+	</React.StrictMode>,
+	document.getElementById("root")
+);
