@@ -1,0 +1,10 @@
+@import "../../variables/styles.scss";
+
+div.animatedBackground {
+	position: absolute;
+	background-color: $colorBackground;
+	z-index: -1;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+}

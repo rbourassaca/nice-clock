@@ -1,21 +1,15 @@
-import styled from "styled-components";
-import styles from "../../variables/styles";
-
-const Foot = styled.footer`
-	position: absolute;
-	bottom: ${styles.spacing.windowBorder};
-`;
+import "./footer.scss";
 
 const Footer = () => {
 	return (
-		<Foot>
+		<footer>
 			<p>
 				Créer&nbsp;par&nbsp;
 				<a href="https://rbourassa.ca" target="_blank">
 					Raphael&nbsp;Bourassa
 				</a>
 			</p>
-		</Foot>
+		</footer>
 	);
 };
 

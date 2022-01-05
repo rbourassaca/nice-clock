@@ -1,12 +1,15 @@
+@import "./variables/styles.scss";
+
 main {
 	@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat:wght@300&display=swap");
 	font-family: "Montserrat", sans-serif;
-	color: #fff;
+	color: $colorText;
+	overflow: hidden;
 	a:link,
 	a:visited,
 	a:hover,
 	a:active {
-		color: #fff;
+		color: $colorText;
 		text-decoration: none;
 	}
 	section {

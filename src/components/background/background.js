@@ -1,17 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import * as three from "three";
 import fog from "vanta/dist/vanta.fog.min";
-import styled from "styled-components";
-import styles from "../../variables/styles";
-
-const Bg = styled.div`
-	position: absolute;
-	background-color: ${styles.colors.background};
-	z-index: -1;
-	height: 100vh;
-	width: 100vw;
-	overflow: hidden;
-`;
+import "./background.scss";
 
 const Background = () => {
 	const [vantaEffect, setVantaEffect] = useState();
@@ -40,7 +30,7 @@ const Background = () => {
 			if (vantaEffect) vantaEffect.destroy();
 		};
 	});
-	return <Bg ref={animation} />;
+	return <div className="animatedBackground" ref={animation} />;
 };
 
 export default Background;
